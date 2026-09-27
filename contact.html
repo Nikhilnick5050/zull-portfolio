@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Aryan Sharma</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">AS</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page">
+    <h1 class="page-title">Get In Touch</h1>
+    <form id="contact-form" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </section>
+
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
